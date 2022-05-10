@@ -4,6 +4,7 @@ import chair from '../../images/chair.png';
 
 
 
+
 const Banner = () => {
     return (
         <div className="hero min-h-screen">
