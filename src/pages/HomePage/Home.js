@@ -2,20 +2,15 @@ import React from 'react';
 import Banner from './Banner';
 
 import Info from './Info/Info';
+import Services from './Services';
 
 const Home = () => {
     return (
-        <div>
-            {/* <div
-                className="bg-{Banner}"
-            // style={{
-            //     backgroundImage: '',
-            //     height: '50vh'
-            // }}
+        <div className='px-12'>
 
-            ></div> */}
             <Banner></Banner>
             <Info></Info>
+            <Services></Services>
 
         </div >
     );
