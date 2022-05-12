@@ -7,6 +7,7 @@ import bgImage from '../../images/bg.png';
 import AnotherService from './AnotherService';
 import MakeAppoinment from './MakeAppoinment';
 import Testimonyal from './Testimonyal';
+import Contact from './Info/Contact';
 
 const Home = () => {
     return (
@@ -23,7 +24,7 @@ const Home = () => {
             <AnotherService></AnotherService>
             <MakeAppoinment></MakeAppoinment>
             <Testimonyal></Testimonyal>
-
+            <Contact></Contact>
         </div >
     );
 };
