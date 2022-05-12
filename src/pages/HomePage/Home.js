@@ -5,9 +5,11 @@ import Info from './Info/Info';
 import Services from './Services';
 import bgImage from '../../images/bg.png';
 import AnotherService from './AnotherService';
+import MakeAppoinment from './MakeAppoinment';
+
 const Home = () => {
     return (
-        <div className='px-12'>
+        <div >
             <div style={{
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: "cover",
@@ -18,6 +20,8 @@ const Home = () => {
             <Info></Info>
             <Services></Services>
             <AnotherService></AnotherService>
+            <MakeAppoinment></MakeAppoinment>
+
 
         </div >
     );
