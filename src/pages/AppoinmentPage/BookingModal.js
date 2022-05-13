@@ -2,9 +2,10 @@
 import React from 'react';
 import { format } from 'date-fns';
 const BookingModal = ({ date, treatment }) => {
-    console.dir(date)
-    console.log(date);
-    console.dir(treatment)
+
+    // const { _id, name, slots } = treatment
+    // console.dir(name)
+    // console.dir(slots)
     return (
         <div>
             <input type="checkbox" id="booking-modal" class="modal-toggle" />
@@ -13,11 +14,19 @@ const BookingModal = ({ date, treatment }) => {
                     <label for="booking-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h3 class="text-xl text-primary  font-semibold'"> Booking for: {treatment?.name}</h3>
                     <form className='grid grid-cols-1 gap-4 justify-items-center mt-2' >
-                        <input value={format(date, 'PP')} class="input input-bordered w-full max-w-xs" />
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        <input disabled value={format(date, 'PP')} class="input input-bordered w-full max-w-xs" />
+                        <select name="slot" class="select select-bordered w-full max-w-xs">
+                            {
+                                treatment?.slots.map(slot => <option
+                                    value={{ slot }}
+                                >{slot}</option>)
+                            }
+
+
+                        </select>
+                        <input type="text" name="name" placeholder="Your Name" class="input input-bordered w-full max-w-xs" />
+                        <input type="email" name="email" placeholder="Email Address" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" name="Phone" placeholder="Phone Number" class="input input-bordered w-full max-w-xs" />
                         <input type="submit" value="Submit" class="btn btn-primary w-full max-w-xs" />
 
                     </form>
