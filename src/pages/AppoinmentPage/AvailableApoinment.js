@@ -1,5 +1,7 @@
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
+import Service from './Service';
+
 
 const AvailableApoinment = ({ date }) => {
 
@@ -13,8 +15,14 @@ const AvailableApoinment = ({ date }) => {
 
     return (
         <div>
-            <h4 className='text-xl text-primary text-center'>Available Appointment's on {format(date, 'PP')}</h4>
-
+            <h4 className='text-3xl text-primary text-center font-semibold'>Available Appointment's on {format(date, 'PP')}</h4>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-12'>
+                {
+                    services.map(service => <Service
+                        key={service._id}
+                        service={service}></Service>)
+                }
+            </div>
 
         </div>
     );
