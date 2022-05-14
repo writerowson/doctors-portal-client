@@ -8,7 +8,7 @@ const AvailableApoinment = ({ date }) => {
 
     const [services, setServices] = useState([])
 
-    const [treatment, setTreatment] = useState({})
+    const [treatment, setTreatment] = useState(null)
     // console.log(treatment);
     useEffect(() => {
         fetch('service.json')
@@ -29,6 +29,7 @@ const AvailableApoinment = ({ date }) => {
             </div>
             {
                 treatment && <BookingModal
+                    key={treatment._id}
                     date={date}
                     treatment={treatment}
                     setTreatment={setTreatment}
