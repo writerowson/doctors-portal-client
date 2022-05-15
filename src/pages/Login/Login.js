@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
-// import Loading from '../Shared/Loading';
+import Loading from '../Shared/Loading';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Login = () => {
@@ -27,9 +27,10 @@ const Login = () => {
         }
     }, [user, gUser, from, navigate])
 
-    // if (loading || gLoading) {
-    //     return <Loading></Loading>
-    // }
+    if (loading || gLoading) {
+
+        return <Loading></Loading>
+    }
 
     if (error || gError) {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
@@ -98,7 +99,7 @@ const Login = () => {
                         {signInError}
                         <input className='btn btn-success w-full max-w-xs text-black' type="submit" value="Login" />
                     </form>
-                    <p><small>New to Doctors Portal <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+                    {/* <p><small>New to Doctors Portal <Link className='text-primary' to="/signup">Create New Account</Link></small></p> */}
                     <div className="divider">OR</div>
 
                     <button
