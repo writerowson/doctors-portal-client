@@ -17,13 +17,13 @@ const Contact = () => {
 
             <div className='my-5'>
                 <div className='my-3' >
-                    <input type="text" placeholder="Type here" class="input input-bordered input-sm w-3/12" />
+                    <input type="text" placeholder="Type here" className="input input-bordered input-sm w-3/12" />
                 </div>
                 <div className='my-3'>
-                    <input type="text" placeholder="Type here" class="input input-bordered input-sm w-3/12" />
+                    <input type="text" placeholder="Type here" className="input input-bordered input-sm w-3/12" />
                 </div>
                 <div className='my-3'>
-                    <textarea class="textarea textarea-accent w-3/12" placeholder="Your Message"></textarea>
+                    <textarea className="textarea textarea-accent w-3/12" placeholder="Your Message"></textarea>
                 </div>
             </div>
 
