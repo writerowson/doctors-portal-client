@@ -4,9 +4,9 @@ const Serviceeee = ({ service, setTreatment }) => {
 
     const { name, slots } = service
     return (
-        <div class="card lg:max-w-lg bg-base-100 shadow-xl ">
-            <div class="card-body">
-                <h2 class="card-title text-primary">{name}</h2>
+        <div class="card lg:max-w-lg bg-base-100 shadow-xl mt-9">
+            <div class="text-center card-body">
+                <h2 class=" text-xl font-bold text-primary">{name}</h2>
 
                 <p>{
                     slots.length > 0
@@ -15,12 +15,11 @@ const Serviceeee = ({ service, setTreatment }) => {
                 }</p>
                 <p>{slots.length} {slots.length > 1 ? 'speces' : 'spece'} Available</p>
                 <div class="card-actions justify-center">
-                    <button
-                    ></button>
+
                     {/* <!-- The button to open modal and get data --> */}
                     <label
                         for="booking-modal"
-                        class="btn btn-primary"
+                        class="btn btn-sm btn-primary "
                         disabled={slots.length === 0}
                         // to get data use arrow function
                         onClick={() => setTreatment(service)}
