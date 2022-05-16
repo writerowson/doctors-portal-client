@@ -11,9 +11,9 @@ const Info = () => {
         <div className='grid grid-cols-1 lg:grid-cols-3  gap-4 px-12'>
 
 
-            <InfoPage bgClass="bg-gradient-to-r text-light from-secondary to-primary" cardTitle="Opening Hours" img={clock} ></InfoPage>
-            <InfoPage bgClass="bg-accent" cardTitle="Location" img={marker} ></InfoPage>
-            <InfoPage bgClass="bg-gradient-to-r text-light from-primary to-secondary" cardTitle="Contact Us" img={phone} ></InfoPage>
+            <InfoPage bg className="bg-gradient-to-r text-light from-secondary to-primary" cardTitle="Opening Hours" img={clock} ></InfoPage>
+            <InfoPage bg className="bg-accent" cardTitle="Location" img={marker} ></InfoPage>
+            <InfoPage bg className="bg-gradient-to-r text-light from-primary to-secondary" cardTitle="Contact Us" img={phone} ></InfoPage>
 
         </div>
     );

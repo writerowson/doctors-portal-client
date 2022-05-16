@@ -7,6 +7,7 @@ import Navber from './pages/Shared/Navber';
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
 import Appointment from './pages/AppoinmentPage/Appointment';
+import Register from './pages/Login/Register';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/appoinment' element={<Appointment></Appointment>}></Route>
       </Routes>
 
