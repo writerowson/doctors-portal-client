@@ -6,3 +6,4 @@
 * react hook form 
 * daisyui
 * react day-picker
+* react toastify

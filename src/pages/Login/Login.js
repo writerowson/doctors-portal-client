@@ -36,9 +36,6 @@ const Login = () => {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
     }
 
-    if (user || gUser) {
-        console.log(user || gUser);
-    }
 
     const onSubmit = data => {
         signInWithEmailAndPassword(data.email, data.password);

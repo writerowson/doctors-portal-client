@@ -2,12 +2,8 @@ import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import BookingModal from './BookingModal';
 import Serviceeee from './Serviceeee';
-
-
 const AvailableApoinment = ({ date }) => {
-
     const [services, setServices] = useState([])
-
     const [treatment, setTreatment] = useState(null)
     // console.log(treatment);
     useEffect(() => {
@@ -38,5 +34,5 @@ const AvailableApoinment = ({ date }) => {
         </div>
     );
 };
-
 export default AvailableApoinment;
+

@@ -18,7 +18,7 @@ const Serviceeee = ({ service, setTreatment }) => {
 
                     {/* <!-- The button to open modal and get data --> */}
                     <label
-                        for="booking-modal"
+                        htmlFor="booking-modal"
                         className="btn btn-sm btn-primary "
                         disabled={slots.length === 0}
                         // to get data use arrow function
