@@ -9,7 +9,7 @@ import Login from './pages/Login/Login';
 import Appointment from './pages/AppoinmentPage/Appointment';
 import Register from './pages/Login/Register';
 import RequireAuth from './pages/Login/RequireAuth';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div >
