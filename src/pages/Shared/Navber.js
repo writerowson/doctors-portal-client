@@ -12,6 +12,7 @@ const Navber = () => {
 
     const menuITEM = <>
 
+
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/appoinment">Appointment</Link></li>
@@ -19,7 +20,8 @@ const Navber = () => {
         <li><Link to="/contact">Contact </Link></li>
         {user && <li><Link to="/dashboard">DashBoard</Link></li>}
 
-        <li>{user ? <button onClick={logout} className="btn btn-ghost">SignOut</button> : <Link to="/login">Log in</Link>}</li>
+        <li>{user ? <button onClick={logout} className="btn btn-ghost">SignOut</button> : <Link to="/login">Login</Link>}</li>
+
     </>
 
 
